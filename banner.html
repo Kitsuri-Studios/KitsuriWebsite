@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitsuri Studios — Banner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0a0a0a;
+            --fg: #e8e8e8;
+            --muted: #666;
+            --border: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+                .banner {
+            width: 1200px;
+            height: 630px;
+            background: var(--bg);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px;
+        }
+
+                .banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+
+                .banner::after {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 60%;
+            height: 80%;
+            background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+                .corner {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 1px solid var(--border);
+        }
+
+        .corner--tl {
+            top: 40px;
+            left: 40px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .corner--tr {
+            top: 40px;
+            right: 40px;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .corner--bl {
+            bottom: 40px;
+            left: 40px;
+            border-right: none;
+            border-top: none;
+        }
+
+        .corner--br {
+            bottom: 40px;
+            right: 40px;
+            border-left: none;
+            border-top: none;
+        }
+
+                .content {
+            position: relative;
+            z-index: 1;
+        }
+
+                .label {
+            display: inline-flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .label-line {
+            width: 50px;
+            height: 1px;
+            background: var(--muted);
+        }
+
+        .label-text {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+                .logo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            color: var(--fg);
+            text-transform: uppercase;
+        }
+
+        .logo-dot {
+            width: 14px;
+            height: 14px;
+            background: var(--fg);
+            border-radius: 50%;
+        }
+
+                .tagline {
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--muted);
+            letter-spacing: 0.02em;
+        }
+
+                .footer {
+            position: absolute;
+            bottom: 60px;
+            left: 80px;
+            right: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .url {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .services {
+            display: flex;
+            gap: 40px;
+        }
+
+        .service {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .service::before {
+            content: '✦';
+            font-size: 8px;
+            opacity: 0.5;
+        }
+
+         .accent-line {
+            position: absolute;
+            top: 50%;
+            right: 120px;
+            width: 1px;
+            height: 200px;
+            background: linear-gradient(to bottom, transparent, var(--border), transparent);
+            transform: translateY(-50%);
+        }
+
+        .year {
+            position: absolute;
+            top: 60px;
+            right: 80px;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.2em;
+            color: var(--muted);
+        }
+
+                .banner-square {
+            width: 800px;
+            height: 800px;
+            background: var(--bg);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .banner-square::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .banner-square .logo {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .banner-square .logo-text {
+            font-size: 80px;
+        }
+
+        .banner-square .tagline {
+            margin-top: 20px;
+        }
+
+                .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            padding: 40px;
+        }
+
+        h2 {
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div>
+            <h2>OG Image / Social Banner (1200×630)</h2>
+            <div class="banner">
+                <div class="corner corner--tl"></div>
+                <div class="corner corner--tr"></div>
+                <div class="corner corner--bl"></div>
+                <div class="corner corner--br"></div>
+                
+                <div class="accent-line"></div>
+                <span class="year">EST. 2025</span>
+                
+                <div class="content">
+                    <div class="label">
+                        <span class="label-line"></span>
+                        <span class="label-text">Open Source Development Studio</span>
+                    </div>
+                    
+                    <div class="logo">
+                        <span class="logo-text">Kitsuri</span>
+                        <span class="logo-dot"></span>
+                    </div>
+                    
+                    <p class="tagline">Code that belongs to everyone.</p>
+                </div>
+                
+                <div class="footer">
+                    <span class="url">kitsuri.studio</span>
+                    <div class="services">
+                        <span class="service">Web Development</span>
+                        <span class="service">Game Development</span>
+                        <span class="service">Native Apps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div>
+            <h2>Square Logo (800×800)</h2>
+            <div class="banner-square">
+                <div class="corner corner--tl"></div>
+                <div class="corner corner--tr"></div>
+                <div class="corner corner--bl"></div>
+                <div class="corner corner--br"></div>
+                
+                <div class="content">
+                    <div class="logo">
+                        <span class="logo-dot"></span>
+                        <span class="logo-text">Kitsuri</span>
+                    </div>
+                    <p class="tagline">Open Source Development Studio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
