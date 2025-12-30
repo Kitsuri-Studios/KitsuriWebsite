@@ -915,13 +915,27 @@ body.cursor-link .cursor-ring {
     transform: translateY(-3px);
 }
 
+@media (max-width: 1280px) {
+    :root {
+        --edge: 4rem;
+        --space-2xl: 8rem;
+    }
+}
+
 @media (max-width: 1024px) {
     :root {
         --edge: 3rem;
+        --space-lg: 3rem;
+        --space-xl: 5rem;
+        --space-2xl: 6rem;
     }
     
     .nav {
         display: none;
+    }
+    
+    .hero-title {
+        font-size: clamp(3rem, 10vw, 7rem);
     }
     
     .about-content,
@@ -933,6 +947,7 @@ body.cursor-link .cursor-ring {
     .about-stats {
         flex-direction: row;
         flex-wrap: wrap;
+        gap: var(--space-md);
     }
     
     .stat-item {
@@ -946,45 +961,148 @@ body.cursor-link .cursor-ring {
     
     .stat-item:last-child {
         border-right: none;
+        padding-right: 0;
     }
     
     .contact-info {
         align-self: start;
+    }
+    
+    .contact {
+        min-height: auto;
     }
 }
 
 @media (max-width: 768px) {
     :root {
         --edge: 1.5rem;
+        --space-lg: 2.5rem;
+        --space-xl: 4rem;
+        --space-2xl: 5rem;
+    }
+    
+    .header {
+        padding: var(--space-sm) var(--edge);
     }
     
     .header-right {
         display: none;
     }
     
+    .hero {
+        min-height: 100svh;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    
+    .hero-top {
+        margin-bottom: var(--space-md);
+    }
+    
+    .hero-label {
+        font-size: 0.65rem;
+    }
+    
+    .label-line {
+        width: 24px;
+    }
+    
+    .hero-title {
+        font-size: clamp(2.25rem, 11vw, 4rem);
+        line-height: 1;
+    }
+    
+    .hero-tagline {
+        font-size: 0.95rem;
+        margin-top: var(--space-md);
+    }
+    
+    .hero-footer {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: var(--space-xl);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-lg);
+    }
+    
     .hero-meta {
-        display: none;
+        display: flex;
+        gap: var(--space-lg);
+    }
+    
+    .meta-item {
+        text-align: left;
+    }
+    
+    .marquee {
+        padding: var(--space-md) 0;
+    }
+    
+    .marquee-content {
+        gap: var(--space-md);
+    }
+    
+    .section-header {
+        flex-wrap: wrap;
+        gap: var(--space-sm);
+        margin-bottom: var(--space-lg);
+    }
+    
+    .section-line {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: var(--space-sm);
     }
     
     .work-item-inner {
         grid-template-columns: 1fr auto;
+        gap: var(--space-md);
+        padding: var(--space-md) 0;
     }
     
     .work-index {
         display: none;
     }
     
+    .work-title {
+        font-size: clamp(1.25rem, 5vw, 1.75rem);
+    }
+    
+    .work-meta {
+        flex-direction: column;
+        gap: 0.25rem;
+        font-size: 0.65rem;
+    }
+    
     .work-link {
-        width: 48px;
-        height: 48px;
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+    }
+    
+    .work-link svg {
+        width: 18px;
+        height: 18px;
     }
     
     .work-image {
         display: none;
     }
     
+    .about-title {
+        font-size: clamp(1.25rem, 5vw, 1.75rem);
+    }
+    
+    .about-text {
+        font-size: 0.9rem;
+    }
+    
     .about-stats {
         flex-direction: column;
+        gap: 0;
     }
     
     .stat-item {
@@ -992,16 +1110,60 @@ body.cursor-link .cursor-ring {
         border-bottom: 1px solid var(--border);
         padding-right: 0;
         padding-bottom: var(--space-md);
+        padding-top: var(--space-md);
+    }
+    
+    .stat-item:first-child {
+        padding-top: 0;
+    }
+    
+    .stat-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    
+    .stat-number {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+    
+    .contact-title {
+        font-size: clamp(1.75rem, 8vw, 3rem);
+    }
+    
+    .contact-cta {
+        padding: var(--space-sm) var(--space-md);
+    }
+    
+    .cta-text {
+        font-size: 0.85rem;
     }
     
     .contact-info {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-md);
+    }
+    
+    .contact-heading {
+        font-size: 0.6rem;
+    }
+    
+    .contact-link,
+    .contact-col p {
+        font-size: 0.8rem;
+    }
+    
+    .footer {
+        padding: var(--space-md) var(--edge);
     }
     
     .footer-inner {
         flex-direction: column;
         gap: var(--space-md);
         text-align: center;
+    }
+    
+    .footer-copy {
+        font-size: 0.65rem;
     }
     
     .cursor {
@@ -1018,16 +1180,77 @@ body.cursor-link .cursor-ring {
 }
 
 @media (max-width: 480px) {
+    :root {
+        --edge: 1.25rem;
+        --space-md: 1.5rem;
+        --space-lg: 2rem;
+        --space-xl: 3rem;
+        --space-2xl: 4rem;
+    }
+    
+    .logo {
+        font-size: 0.8rem;
+    }
+    
     .hero-title {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 12vw, 3rem);
+    }
+    
+    .hero-tagline {
+        font-size: 0.85rem;
+    }
+    
+    .hero-meta {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .work-title {
+        font-size: 1.15rem;
+    }
+    
+    .work-meta {
+        font-size: 0.6rem;
+    }
+    
+    .work-link {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .about-title {
+        font-size: 1.15rem;
     }
     
     .contact-title {
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 9vw, 2.5rem);
     }
     
     .contact-cta {
         width: 100%;
         justify-content: center;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+}
+
+@media (max-width: 360px) {
+    :root {
+        --edge: 1rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .work-item-inner {
+        gap: var(--space-sm);
+    }
+    
+    .work-title {
+        font-size: 1rem;
     }
 }
