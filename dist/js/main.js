@@ -309,6 +309,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 toggleActions: 'play none none reverse'
             }
         });
+        
+        document.querySelectorAll('.team-member').forEach((member, i) => {
+            gsap.from(member, {
+                y: 40,
+                opacity: 0,
+                duration: 0.6,
+                delay: i * 0.08,
+                ease: 'power3.out',
+                scrollTrigger: {
+                    trigger: '.team-grid',
+                    start: 'top 85%',
+                    toggleActions: 'play none none reverse'
+                }
+            });
+        });
     }
 
    
@@ -351,9 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
    
-   
-   
-    const magneticBtns = document.querySelectorAll('.contact-cta, .work-link, .footer-top');
+   const magneticBtns = document.querySelectorAll('.contact-cta, .work-link, .footer-top');
     
     magneticBtns.forEach(btn => {
         btn.addEventListener('mousemove', (e) => {
