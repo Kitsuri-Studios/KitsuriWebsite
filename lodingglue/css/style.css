@@ -2,7 +2,7 @@
     --bg: #f5f5f0;
     --fg: #1a1a18;
     --muted: #777;
-    --accent: #378ce7;
+    --accent: #8800ff;
     --border: #ddd;
     --font: 'Space Grotesk', sans-serif;
     --ease: cubic-bezier(0.16, 1, 0.3, 1);
@@ -146,7 +146,7 @@ button {
 .hero-name {
     font-size: clamp(3.5rem, 10vw, 8rem);
     font-weight: 500;
-    line-height: 0.95;
+    line-height: 1.1;
     letter-spacing: -0.04em;
     margin-bottom: 2rem;
 }
@@ -155,7 +155,11 @@ button {
     display: block;
     overflow: hidden;
 }
-
+.name-line2 {
+    display: block;
+    overflow: hidden;
+    color: var(--accent);
+}
 .name-line:nth-child(2) {
     color: var(--accent);
 }
@@ -242,13 +246,14 @@ button {
 
 .pfp-wrapper:hover {
     transform: scale(1.05);
+    border-color: var(--accent);
 }
 
 .pfp-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(0%);
+    filter: grayscale(30%);
     transition: filter 0.5s var(--ease);
 }
 
