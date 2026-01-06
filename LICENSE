@@ -1,0 +1,163 @@
+KITSURI STUDIOS PROPRIETARY SOURCE LICENSE
+
+Copyright © 2025 Kitsuri Studios
+All Rights Reserved.
+
+────────────────────────────────────────────────────────────
+
+IMPORTANT NOTICE:
+THIS SOFTWARE IS NOT OPEN SOURCE.
+VIEWING IS PERMITTED. ALL OTHER ACTIONS ARE PROHIBITED.
+
+────────────────────────────────────────────────────────────
+
+1. DEFINITIONS
+
+“Software” means this repository and all of its contents, including but not limited to:
+source code, object code, binaries, scripts, build files, configuration files,
+documentation, comments, assets, resources, designs, algorithms, logic,
+workflows, interfaces, APIs, and any portion or combination thereof.
+
+“Kitsuri Studios” means the copyright holder and all affiliated developers,
+maintainers, and legal representatives.
+
+“User” means any individual or entity that accesses, views, clones, downloads,
+forks, mirrors, or otherwise obtains the Software by any means.
+
+────────────────────────────────────────────────────────────
+
+2. OWNERSHIP AND RESERVATION OF RIGHTS
+
+The Software is the exclusive intellectual property of Kitsuri Studios and is
+protected by copyright, trade secret, and other applicable intellectual property
+laws.
+
+NO RIGHTS ARE GRANTED under this license except the limited right to visually
+inspect the Software.
+
+All rights not explicitly granted are expressly and irrevocably reserved by
+Kitsuri Studios.
+
+────────────────────────────────────────────────────────────
+
+3. LIMITED VIEW-ONLY PERMISSION
+
+Permission is granted solely to VIEW the Software in uncompiled, unexecuted form
+for personal evaluation or reference.
+
+This permission:
+- Does NOT allow use
+- Does NOT allow execution
+- Does NOT allow compilation
+- Does NOT allow modification
+- Does NOT allow reproduction
+- Does NOT allow redistribution
+- Does NOT allow derivation
+- Does NOT allow integration
+- Does NOT allow benchmarking
+- Does NOT allow educational use
+- Does NOT allow commercial use
+- Does NOT allow non-commercial use
+
+Viewing does NOT include copying, saving, exporting, screenshotting, printing,
+or otherwise reproducing the Software in any form.
+
+────────────────────────────────────────────────────────────
+
+4. STRICTLY PROHIBITED ACTIONS
+
+The User SHALL NOT, under any circumstances and by any means:
+
+a) Use the Software or any portion thereof, directly or indirectly  
+b) Copy, reproduce, duplicate, mirror, archive, snapshot, or store the Software  
+c) Compile, build, execute, run, or link the Software  
+d) Modify, adapt, translate, refactor, or alter the Software  
+e) Create derivative works or works substantially similar in structure, logic,
+   behavior, or implementation  
+f) Incorporate the Software into any other project, library, framework, or product  
+g) Reverse engineer, decompile, disassemble, or analyze the Software  
+h) Extract ideas, algorithms, logic, designs, workflows, or architecture for use
+   elsewhere  
+i) Use the Software for research, testing, benchmarking, or evaluation  
+j) Use the Software as training data or input for artificial intelligence,
+   machine learning, or automated systems  
+k) Share, disclose, publish, or distribute the Software or any portion thereof  
+l) Circumvent or attempt to circumvent any technical or legal restriction  
+m) Fork the repository or create derivative repositories  
+
+────────────────────────────────────────────────────────────
+
+5. NO IMPLIED LICENSE
+
+Nothing in this license shall be construed as granting, by implication, estoppel,
+or otherwise, any license or right under any patent, copyright, trademark,
+trade secret, or other intellectual property right of Kitsuri Studios.
+
+────────────────────────────────────────────────────────────
+
+6. CONFIDENTIALITY
+
+The Software contains proprietary and confidential information.
+The User agrees to treat the Software as confidential and not disclose it to
+any third party under any circumstances.
+
+────────────────────────────────────────────────────────────
+
+7. TERMINATION
+
+This license is automatically and immediately terminated upon any violation.
+Upon termination, the User must immediately cease all access to the Software and
+destroy any copies, fragments, or recollections of the Software.
+
+────────────────────────────────────────────────────────────
+
+8. ENFORCEMENT AND REMEDIES
+
+Any unauthorized access, use, or disclosure of the Software constitutes a
+material breach and may result in:
+
+- Immediate revocation of access  
+- Civil liability  
+- Injunctive relief  
+- Statutory and compensatory damages  
+- Criminal prosecution where applicable  
+
+Kitsuri Studios reserves the right to pursue ALL legal remedies without limitation.
+
+────────────────────────────────────────────────────────────
+
+9. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+────────────────────────────────────────────────────────────
+
+10. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL KITSURI STUDIOS BE LIABLE FOR ANY DAMAGES ARISING FROM OR RELATED
+TO ACCESS TO THE SOFTWARE, INCLUDING BUT NOT LIMITED TO DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES.
+
+────────────────────────────────────────────────────────────
+
+11. GOVERNING LAW AND JURISDICTION
+
+This license shall be governed by and construed in accordance with the laws
+applicable to Kitsuri Studios, without regard to conflict of law principles.
+Exclusive jurisdiction and venue shall lie with courts chosen by Kitsuri Studios.
+
+────────────────────────────────────────────────────────────
+
+12. CONTACT
+
+Licensing requests, permissions, or legal inquiries must be directed to:
+
+Kitsuri Studios  
+Email: studio@kitsuri.dev  
+Website: https://kitsuri.dev
+
+────────────────────────────────────────────────────────────
+
+END OF LICENSE
